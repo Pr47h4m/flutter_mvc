@@ -13,7 +13,7 @@ class FlutterGeneral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "Flutter",
+      title: "Flutter_MVC",
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {

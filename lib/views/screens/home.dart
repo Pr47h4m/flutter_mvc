@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
             length: 2,
             child: Scaffold(
               appBar: AppBar(
-                title: Text("Flutter"),
+                title: Text("Flutter_MVC"),
                 elevation: 0,
                 bottom: TabBar(
                   tabs: [
