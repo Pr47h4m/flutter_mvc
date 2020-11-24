@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
             length: 2,
             child: Scaffold(
               appBar: AppBar(
-                title: Text("Flutter_MVC"),
+                title: Text("FLUTTER_MVC"),
                 elevation: 0,
                 bottom: TabBar(
                   tabs: [
@@ -46,7 +46,7 @@ class Home extends StatelessWidget {
                       ),
                       RaisedButton(
                         child: Text(
-                          "Check",
+                          "CHECK",
                           style: Theme.of(context).textTheme.button,
                         ),
                         onPressed: () {
@@ -93,7 +93,7 @@ class AlertDialogButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return RaisedButton(
       child: Text(
-        "Alert Dialog",
+        "ALERT DIALOG",
         style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),
       ),
       color: Theme.of(context).colorScheme.primary,
@@ -106,7 +106,7 @@ class AlertDialogButton extends StatelessWidget {
             actions: [
               FlatButton(
                 child: Text(
-                  "Close",
+                  "CLOSE",
                   style: Theme.of(context)
                       .textTheme
                       .button
@@ -131,7 +131,7 @@ class SnackbarButton extends StatelessWidget {
           behavior: SnackBarBehavior.floating,
           content: const Text('Text label'),
           action: SnackBarAction(
-            label: 'Action',
+            label: 'ACTION',
             onPressed: () {},
             textColor: Theme.of(context).colorScheme.primary,
           ),
@@ -140,7 +140,7 @@ class SnackbarButton extends StatelessWidget {
       },
       color: Theme.of(context).colorScheme.primary,
       child: Text(
-        'Show SnackBar',
+        'SHOW SNACKBAR',
         style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),
       ),
     );
