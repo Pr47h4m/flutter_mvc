@@ -160,7 +160,7 @@ class _DatePickerButtonState extends State<DatePickerButton> {
     showDatePicker(
       context: context,
       initialDate: DateTime.now(),
-      firstDate: DateTime(2020),
+      firstDate: DateTime(DateTime.now().year),
       lastDate: DateTime.now(),
     ).then((value) {
       setState(() {
