@@ -1,11 +1,9 @@
 {
-    "name": "flutter_general",
-    "short_name": "flutter_general",
-    "start_url": ".",
+    "name": "FLUTTER_MVC",
+    "short_name": "FLUTTER_MVC",
+    "start_url": "/",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "MVC Architecture for Flutter",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
