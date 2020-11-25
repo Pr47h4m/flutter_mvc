@@ -3,7 +3,9 @@
     "short_name": "FLUTTER_MVC",
     "start_url": "/",
     "display": "standalone",
-    "description": "MVC Architecture for Flutter",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "description": "MVC ARCHITECTURE FOR FLUTTER",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
