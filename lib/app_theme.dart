@@ -59,23 +59,25 @@ class AppTheme {
         fontWeight: FontWeight.w500,
       );
 
-  static const lightTextColor = Color.fromRGBO(31, 31, 31, 1);
-  static const darkTextColor = Color.fromRGBO(225, 225, 225, 1);
+  static const lightTextColor = const Color.fromRGBO(31, 31, 31, 1);
+  static const darkTextColor = const Color.fromRGBO(225, 225, 225, 1);
+  static const lightThemePrimary = const Color(0xff6200ee);
+  static const darkThemePrimary = const Color(0xffbb86fc);
 
   static final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     errorColor: const Color(0xffb00020),
     scaffoldBackgroundColor: Color.fromRGBO(248, 249, 250, 1),
     appBarTheme: AppBarTheme(
-      color: const Color(0xff6200ee),
+      color: lightThemePrimary,
       iconTheme: IconThemeData(
         color: Colors.white,
       ),
       brightness: Brightness.light,
     ),
     colorScheme: ColorScheme.light(
-      primary: const Color(0xff6200ee),
-      secondary: const Color(0xff6200ee),
+      primary: lightThemePrimary,
+      secondary: lightThemePrimary,
       onSurface: const Color.fromRGBO(248, 249, 250, 1),
     ),
     snackBarTheme: SnackBarThemeData(
@@ -83,7 +85,7 @@ class AppTheme {
       elevation: 2,
       contentTextStyle: bodyText1.copyWith(color: darkTextColor),
       behavior: SnackBarBehavior.floating,
-      actionTextColor: const Color(0xff6200ee),
+      actionTextColor: lightThemePrimary,
     ),
     cardTheme: CardTheme(
       color: const Color(0xffffffff),
@@ -91,7 +93,7 @@ class AppTheme {
     iconTheme: IconThemeData(
       color: Colors.white,
     ),
-    indicatorColor: const Color(0xff6200ee),
+    indicatorColor: lightThemePrimary,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       shape: RoundedRectangleBorder(
@@ -103,9 +105,14 @@ class AppTheme {
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(4),
       ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(
+          color: lightTextColor,
+        ),
+      ),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: const Color(0xff6200ee),
+          color: lightThemePrimary,
         ),
       ),
       labelStyle: TextStyle(
@@ -141,8 +148,8 @@ class AppTheme {
       brightness: Brightness.dark,
     ),
     colorScheme: ColorScheme.dark(
-      primary: const Color(0xffbb86fc),
-      secondary: const Color(0xffbb86fc),
+      primary: darkThemePrimary,
+      secondary: darkThemePrimary,
       onSurface: const Color.fromRGBO(31, 31, 31, 1),
     ),
     snackBarTheme: SnackBarThemeData(
@@ -150,7 +157,7 @@ class AppTheme {
       elevation: 2,
       contentTextStyle: bodyText1.copyWith(color: darkTextColor),
       behavior: SnackBarBehavior.floating,
-      actionTextColor: const Color(0xffbb86fc),
+      actionTextColor: darkThemePrimary,
     ),
     cardTheme: CardTheme(
       color: const Color.fromRGBO(31, 31, 31, 1),
@@ -158,7 +165,7 @@ class AppTheme {
     iconTheme: IconThemeData(
       color: Colors.white,
     ),
-    indicatorColor: const Color(0xffbb86fc),
+    indicatorColor: darkThemePrimary,
     bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: const Color.fromRGBO(31, 31, 31, 1),
       shape: RoundedRectangleBorder(
@@ -177,7 +184,7 @@ class AppTheme {
       ),
       focusedBorder: OutlineInputBorder(
         borderSide: BorderSide(
-          color: const Color(0xffbb86fc),
+          color: darkThemePrimary,
         ),
       ),
       labelStyle: TextStyle(
