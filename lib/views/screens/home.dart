@@ -61,6 +61,7 @@ class Home extends StatelessWidget {
                     children: [
                       AlertDialogButton(),
                       SnackbarButton(),
+                      DatePickerButton(),
                     ],
                   ),
                 ],
@@ -143,6 +144,40 @@ class SnackbarButton extends StatelessWidget {
         'SHOW SNACKBAR',
         style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),
       ),
+    );
+  }
+}
+
+class DatePickerButton extends StatefulWidget {
+  @override
+  _DatePickerButtonState createState() => _DatePickerButtonState();
+}
+
+class _DatePickerButtonState extends State<DatePickerButton> {
+  DateTime _selectedDate;
+
+  void _datePicker() {
+    showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2020),
+      lastDate: DateTime.now(),
+    ).then((value) {
+      setState(() {
+        _selectedDate = value;
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return RaisedButton(
+      onPressed: _datePicker,
+      child: Text(
+        "CHOOSE DATE",
+        style: Theme.of(context).textTheme.button.copyWith(color: Colors.white),
+      ),
+      color: Theme.of(context).colorScheme.primary,
     );
   }
 }
