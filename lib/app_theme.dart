@@ -73,7 +73,6 @@ class AppTheme {
       iconTheme: IconThemeData(
         color: Colors.white,
       ),
-      brightness: Brightness.light,
     ),
     colorScheme: ColorScheme.light(
       primary: lightThemePrimary,
@@ -145,7 +144,6 @@ class AppTheme {
       iconTheme: IconThemeData(
         color: Colors.white,
       ),
-      brightness: Brightness.dark,
     ),
     colorScheme: ColorScheme.dark(
       primary: darkThemePrimary,

@@ -1,7 +1,7 @@
 {
     "name": "FLUTTER_MVC",
     "short_name": "FLUTTER_MVC",
-    "start_url": "/",
+    "start_url": "/#/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
