@@ -59,6 +59,16 @@ class AppTheme {
         fontWeight: FontWeight.w500,
       );
 
+  static const ColorScheme darkThemeDatePickerColorScheme = ColorScheme.dark(
+    surface: darkThemePrimary,
+    onSurface: darkTextColor,
+  );
+
+  static const ColorScheme lightThemeDatePickerColorScheme = ColorScheme.light(
+    surface: lightThemePrimary,
+    onSurface: lightTextColor,
+  );
+
   static const lightTextColor = const Color.fromRGBO(31, 31, 31, 1);
   static const darkTextColor = const Color.fromRGBO(225, 225, 225, 1);
   static const lightThemePrimary = const Color(0xff6200ee);

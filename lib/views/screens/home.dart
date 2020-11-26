@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvc/app_theme.dart';
 import 'package:flutter_mvc/views/components/app_drawer.dart';
 
 class Home extends StatelessWidget {
@@ -162,6 +163,16 @@ class _DatePickerButtonState extends State<DatePickerButton> {
       initialDate: DateTime.now(),
       firstDate: DateTime(DateTime.now().year),
       lastDate: DateTime.now(),
+      builder: (context, child) {
+        return Theme(
+          data: (MediaQuery.of(context).platformBrightness == Brightness.light)
+              ? ThemeData.light().copyWith(
+                  colorScheme: AppTheme.lightThemeDatePickerColorScheme)
+              : ThemeData.dark().copyWith(
+                  colorScheme: AppTheme.darkThemeDatePickerColorScheme),
+          child: child,
+        );
+      },
     ).then((value) {
       setState(() {
         _selectedDate = value;
