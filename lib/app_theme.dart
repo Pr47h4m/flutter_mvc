@@ -79,6 +79,7 @@ class AppTheme {
     errorColor: const Color(0xffb00020),
     scaffoldBackgroundColor: Color.fromRGBO(248, 249, 250, 1),
     appBarTheme: AppBarTheme(
+	  elevation: 0,
       color: lightThemePrimary,
       iconTheme: IconThemeData(
         color: Colors.white,
@@ -150,6 +151,7 @@ class AppTheme {
     errorColor: const Color(0xffcf6679),
     scaffoldBackgroundColor: const Color(0xff121212),
     appBarTheme: AppBarTheme(
+	  elevation: 0,
       color: const Color.fromRGBO(31, 31, 31, 1),
       iconTheme: IconThemeData(
         color: Colors.white,

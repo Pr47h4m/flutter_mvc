@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mvc/app_theme.dart';
-import 'package:flutter_mvc/views/components/app_drawer.dart';
+import '../../app_theme.dart';
+import '../components/app_drawer.dart';
 
 class Home extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
