@@ -4,6 +4,7 @@
 import 'package:flutter/material.dart';
 import './app_theme.dart';
 import './views/screens/home.dart';
+import './constants/constants.dart';
 import './views/screens/page_not_found.dart';
 
 void main() => runApp(FlutterGeneral());
@@ -13,7 +14,7 @@ class FlutterGeneral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "FLUTTER_MVC",
+      title: Constants.title,
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
