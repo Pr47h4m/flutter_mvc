@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../app_theme.dart';
 import '../components/app_drawer.dart';
+import '../../constants/constants.dart';
 
 class Home extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
@@ -17,7 +19,7 @@ class Home extends StatelessWidget {
             length: 2,
             child: Scaffold(
               appBar: AppBar(
-                title: Text("FLUTTER_MVC"),
+                title: Text(Constants.title),
                 elevation: 0,
                 bottom: TabBar(
                   tabs: [

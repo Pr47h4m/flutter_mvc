@@ -1,7 +1,17 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  /// TextStyle According To [https://Material.io]
+  static const lightThemePrimary = const Color(0xff6200ee);
+  static const darkThemePrimary = const Color(0xffbb86fc);
+  static const lightTextColor = const Color.fromRGBO(31, 31, 31, 1);
+  static const darkTextColor = const Color.fromRGBO(225, 225, 225, 1);
+
+  ///////////////////////////////////////////////////////////
+  ////////////[Jhanvi Soni & Pratham Jaiswal] ///////////////
+  /// TextStyle According To [https://Material.io] //////////
+  ///////////////////////////////////////////////////////////
+  ////////////////////[DONOT MODIFY]/////////////////////////
+  ///////////////////////////////////////////////////////////
   static const TextStyle headline1 = const TextStyle(
         fontSize: 96,
         letterSpacing: -1.5,
@@ -69,17 +79,12 @@ class AppTheme {
     onSurface: lightTextColor,
   );
 
-  static const lightTextColor = const Color.fromRGBO(31, 31, 31, 1);
-  static const darkTextColor = const Color.fromRGBO(225, 225, 225, 1);
-  static const lightThemePrimary = const Color(0xff6200ee);
-  static const darkThemePrimary = const Color(0xffbb86fc);
-
   static final ThemeData lightTheme = ThemeData(
     brightness: Brightness.light,
     errorColor: const Color(0xffb00020),
     scaffoldBackgroundColor: Color.fromRGBO(248, 249, 250, 1),
     appBarTheme: AppBarTheme(
-	  elevation: 0,
+      elevation: 0,
       color: lightThemePrimary,
       iconTheme: IconThemeData(
         color: Colors.white,
@@ -151,7 +156,7 @@ class AppTheme {
     errorColor: const Color(0xffcf6679),
     scaffoldBackgroundColor: const Color(0xff121212),
     appBarTheme: AppBarTheme(
-	  elevation: 0,
+      elevation: 0,
       color: const Color.fromRGBO(31, 31, 31, 1),
       iconTheme: IconThemeData(
         color: Colors.white,

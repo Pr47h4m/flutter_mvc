@@ -1,5 +1,4 @@
 /// @author: [Pratham Jaiswal & Jhanvi Soni]
-/// Build Path: [C:\Users\Pratham\Desktop\flutter\flutter_general\build\windows\runner\Release\flutter_general.exe]
 
 import 'package:flutter/material.dart';
 import './app_theme.dart';
